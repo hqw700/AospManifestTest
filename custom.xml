@@ -1,0 +1,12 @@
+<manifest>
+    <remote name="github" fetch="https://github.com/hqw700"/>
+    <!-- <remote name="github" fetch="git@github.com"/> -->
+
+    <!-- 删除原代码仓库 -->
+    <remove-project name="platform/prebuilts/qemu-kernel"/>
+    <!-- 替换为自己的仓库示例，未创建该仓库 -->
+    <!-- <project path="prebuilts/qemu-kernel" name="hqw700/prebuilts/qemu-kernel" remote="github" revision="master"/> -->
+
+    <!-- 新增仓库示例 -->
+    <project path="frameworks/native/cmds/binderdemo" name="binderdemo" remote="github" revision="main"/>
+</manifest>
